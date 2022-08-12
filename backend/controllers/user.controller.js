@@ -3,9 +3,9 @@ const express=require('express');
 const User = require('../models/user.model');
 const router=express.Router();
 // const app=express()
-const protect=require('../middleware/protect')
+const protect=require('../middleware/protect.js')
 
-router.get('/userz',async(req,res)=>{
+router.get('/userz',protect,async(req,res)=>{
     console.log("trying to get data")
     try{
 
