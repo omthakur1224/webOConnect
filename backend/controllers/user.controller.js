@@ -5,7 +5,7 @@ const router=express.Router();
 // const app=express()
 const protect=require('../middleware/protect.js')
 
-router.get('/userz',protect,async(req,res)=>{
+router.get('/userz',async(req,res)=>{
     console.log("trying to get data")
     try{
 

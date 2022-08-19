@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const newToken=(user)=>{
 
-    return jwt.sign({id:user.id},process.env.JWT_SECRETE_KEY) 
+    return jwt.sign({id:user.id},"webOConnect") 
 }
 
 const signup=async(req,res)=>{
