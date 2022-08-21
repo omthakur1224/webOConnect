@@ -46,6 +46,7 @@ router.patch('/userz/:id',async(req,res)=>{
     }
     catch(err){
         console.log("error in getting")
+        res.send({"status":"failed",err})
     }
 })
 
